@@ -31,7 +31,7 @@ class _JokePageState extends State<JokePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Joke Page'),
+        title: const Text('Joke Nè'),
       ),
       
       body: Center(
