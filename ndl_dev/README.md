@@ -31,4 +31,15 @@ samples, guidance on mobile development, and a full API reference. -->
 - Hiển thị nội dung : Text, Image,...
 - Tương tác với người dùng : Button , Slider , .....
 - Tạo bố cục : Row, column, stack,.....
+*----------------------------------------------------------------------------
+- Stateless và Stateful widget
+- State là gì ? 
+- Stateless widget
+- Stateful widget
+- Nên chọn cái nào ? 
+* Ý tưởng chính là bạn xây dựng giao diện người dùng của mình bằng các widget. Các widget mô tả giao diện của chúng sẽ trông như thế nào dựa trên cấu hình và trạng thái hiện tại. Khi trạng thái của một widget thay đổi, widget sẽ xây dựng lại mô tả của nó.
+--------------------*
+VNP
+Text("Đã ngắt kết nối")
+isConnected = false
 
