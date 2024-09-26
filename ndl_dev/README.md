@@ -39,7 +39,21 @@ samples, guidance on mobile development, and a full API reference. -->
 - Nên chọn cái nào ? 
 * Ý tưởng chính là bạn xây dựng giao diện người dùng của mình bằng các widget. Các widget mô tả giao diện của chúng sẽ trông như thế nào dựa trên cấu hình và trạng thái hiện tại. Khi trạng thái của một widget thay đổi, widget sẽ xây dựng lại mô tả của nó.
 --------------------*
-VNP
-Text("Đã ngắt kết nối")
-isConnected = false
+-VNP
+-Text("Đã ngắt kết nối VPN")
+-Text("------------")
+
+-isConnected = false
+-severName = "Singapore"
+-severIp = "1234.5678.9"
+---------------------------------------------------------------------------*
+- MaterialApp, CupertinoApp, WidgetsApp
+???-------------------------------------------------------------------------*
+
+____________________________Trang 2_________________________________________
+
+1- Set state là gì ?
+<---------------------------------------------------------------------------> Trong bài viết trước, bạn đã biết stateless widget là gì, stateful widget là gì, và quan trọng hơn đó là state là gì. Mình nhắc lại một chút rằng Stateful widget có nghĩa là widget có state, và state đơn giản đó là thông tin / dữ liệu. Và dữ liệu này sẽ ảnh hưởng đến cách hiển thị của widget (diễn đạt theo một cách khác thì dữ liệu này sẽ được sử dụng trong widget để hiển thị theo cách bạn muốn).
+<--------------------------------------------------------------------------->
+2- When thì cần dùng set state ?
 
