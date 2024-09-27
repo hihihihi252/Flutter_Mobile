@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Buildcontext.dart'; // Import the Buildcontext.dart file
 
 void main() {
   runApp(const SetStateApp());
@@ -33,63 +34,70 @@ class _JokePageState extends State<JokePage> {
       appBar: AppBar(
         title: const Text('Joke Nè'),
       ),
-      
       body: Center(
-          
-       child: Column(
-        
-        children: [
-          const SizedBox(
-            height: 300,
-          ),
-          const Text("This is a content of the joke"),
-          Text("Lượt Like: $likeCounter"),
-          ElevatedButton(
-            onPressed: () {
-              setState(() {
-                likeCounter++; // Increment likeCounter
-              });
-              print('Like Count: $likeCounter'); // Print updated count
-            },
-            child: const Text('Like'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              setState(() {
-                shareCounter++; // Increment shareCounter and update UI
-              });
-              print('Share Count: $shareCounter'); // Print updated count
-            },
-            child: const Text('Share'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              // Show dialog with information
-              showDialog(
-                context: context,
-                builder: (context) {
-                  return AlertDialog(
-                    title: const Text('Information'),
-                    content: Text(
-                      'Likes: $likeCounter\nShares: $shareCounter',
-                    ),
-                    actions: [
-                      TextButton(
-                        onPressed: () {
-                          Navigator.of(context).pop(); // Close the dialog
-                        },
-                        child: const Text('Close'),
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 300,
+            ),
+            const Text("This is a content of the joke"),
+            Text("Lượt Like: $likeCounter"),
+            ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  likeCounter++; // Increment likeCounter
+                });
+                print('Like Count: $likeCounter'); // Print updated count
+              },
+              child: const Text('Like'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  shareCounter++; // Increment shareCounter and update UI
+                });
+                print('Share Count: $shareCounter'); // Print updated count
+              },
+              child: const Text('Share'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Show dialog with information
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: const Text('Information'),
+                      content: Text(
+                        'Likes: $likeCounter\nShares: $shareCounter',
                       ),
-                    ],
-                  );
-                },
-              );
-            },
-            child: const Text('View Information'),
-          ),
-        ],
+                      actions: [
+                        TextButton(
+                          onPressed: () {
+                            Navigator.of(context).pop(); // Close the dialog
+                          },
+                          child: const Text('Close'),
+                        ),
+                      ],
+                    );
+                  },
+                );
+              },
+              child: const Text('View Information'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Navigate to new screen
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const BuildContextScreen()),
+                );
+              },
+              child: const Text('Go to New Screen'),
+            ),
+          ],
+        ),
       ),
-    ),
     );
   }
 }

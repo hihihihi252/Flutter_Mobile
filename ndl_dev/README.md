@@ -14,6 +14,83 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference. -->
+-----------------------------Kiến thức cơ bả--------------------------------
+Toán tử số học
+
+Ký hiệu	Mô tả toán tử
++ 	Cộng hai toán hạng
+–	Trừ hai toán hạng
+-expr	Đảo ngược dấu của biểu thức
+* 	Nhân hai toán hạng
+/ 	Chia hai toán hạng
+~/	Chia lấy phần nguyên
+% 	Chia lấy phần dư
+----------------------------------------------
+Toán tử đẳng thức và quan hệ
+
+Ký hiệu	Mô tả toán tử
+> 	Kiểm tra lớn hơn.
+<	Kiểm tra nhỏ hơn.
+>=	Kiểm tra lớn hơn hoặc bằng.
+<=	Kiểm tra nhỏ hơn hoặc bằng.
+== 	Kiểm tra có bằng nhau hay không.
+!=	Kiểm tra có khác nhau hay không.
+----------------------------------------------
+Toán tử kiểm tra kiểu
+
+Ký hiệu	Mô tả toán tử
+is	Đúng nếu đối tượng có kiểu được chỉ định.
+is!	Sai nếu đối tượng có kiểu được chỉ định.
+as	Typecast (cũng được sử dụng để chỉ định tiền tố thư viện).
+----------------------------------------------
+Toán tử gán
+
+Ký hiệu	Mô tả toán tử
+=	Gán giá trị
++=	Cộng trước rồi gán.
+----------------------------------------------
+Toán tử logic
+
+Ký hiệu	Mô tả toán tử
+&& 	Nếu cả hai điều kiện đều đúng trả về true.
+||	Nếu một trong hai điều kiện đúng sẽ trả về true.
+!	Đảo ngược kết quả.
+----------------------------------------------
+Bitwise và shift
+
+Ký hiệu	Mô tả toán tử
+& 	Và.
+|	Hoặc.
+^ 	XOR.
+~ 	NOT.
+<< 	Dịch trái>> Dịch phải.
+----------------------------------------------
+Biểu thức điều kiện
+
+Ký hiệu	Mô tả toán tử
+điều kiện ? expersion1: expersion2	Phiên bản đơn giản của câu lệnh if-else. Nếu điều kiện đúng thì expersion1 được thực thi, nếu sai expersion2 được thực thi.
+expersion1 ?? expersion2	Nếu expersion1 khác null trả về giá trị của expersion1, ngược lại trả về giá trị expersion2.
+----------------------------------------------
+Cascade notation
+
+Ký hiệu	Mô tả toán tử
+...	Thao tác một chuỗi hành động trên cùng một đối tượng.
+----------------------------------------------
+Các toán tử khác
+
+Ký hiệu	Mô tả toán tử
+[]	Truy cập danh sách.
+?[]	Truy cập danh sách có điều kiện (nếu không null).
+()	Gọi hàm.
+?.	Truy cập thành viên.
+?.	Truy cập thành viên có điều kiện (nếu không null).
+!	Null assertion operator.
+
+
+
+
+
+
 -------------------------------Bài Học--------------------------------------
 - Widget là gì ? 
 - Phân loại Widget 
